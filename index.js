@@ -80,13 +80,13 @@ function check(argument)
   if(document.getElementById("btn"+argument).innerHTML=="")
   {
     if(count%2==0)
-      {document.getElementById("btn"+argument).innerHTML="<b>X</b>"
+      {document.getElementById("btn"+argument).innerHTML="<h1><b>X</b></h1>"
       document.getElementById("btn"+argument).style.color="red"
       document.getElementById("player2name").style.color="green"
       document.getElementById("player1name").style.color="black"
       }
     else
-     { document.getElementById("btn"+argument).innerHTML="<b>O</b>"
+     { document.getElementById("btn"+argument).innerHTML="<h1><b>O</b></h1>"
      document.getElementById("btn"+argument).style.color="blue"
      document.getElementById("player1name").style.color="green"
      document.getElementById("player2name").style.color="black"
