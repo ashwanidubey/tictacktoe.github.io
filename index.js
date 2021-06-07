@@ -1,5 +1,5 @@
-let player1="Player 1"
-let player2="Player 2"
+let player1="Player1"
+let player2="Player2"
 let gameover=0;
 let count=0;
 function set()
