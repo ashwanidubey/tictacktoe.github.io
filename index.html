@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+   </head> 
+   <body>
+       <div id="main_div">
+        <div id="form">
+            <input id="player1" value="PLAYER 1" type="text"  placeholder="PLAYER 1">
+            <input id="player2" value="PLAYER 2" type="text" placeholder="PLAYER 2">
+            <button onclick=set()>next</button>
+        </div>
+        <div id="winner_div">
+           <h1 id="winner_message">hii</h1>
+        </div>
+        <div id="table">
+              <table>
+                  <tr >
+                      <td><button id="btn1" onclick="check(1)" class="button"></button></td>
+                      <td><button id="btn2" onclick="check(2)" class="button"></button></td>
+                      <td><button  id="btn3" onclick="check(3)" class="button"></button></td>
+                 </tr>
+                  <tr>
+                     <td><button  id="btn4" onclick="check(4)" class="button"></button></td>
+                     <td><button id="btn5" onclick="check(5)" class="button"></button></td>
+                     <td><button  id="btn6" onclick="check(6)" class="button"></button></td>
+                  </tr>
+                  <tr>
+                     <td><button id="btn7" onclick="check(7)" class="button"></button></td>
+                     <td><button  id="btn8" onclick="check(8)" class="button"></button></td>
+                     <td><button id="btn9" onclick="check(9)" class="button"></button></td>
+                 </tr>     
+              </table>
+        </div>
+        <footer id="player_name_div" >
+            <h3 id="player1name"></h3>
+            <h3 id="player2name"></h3>
+        </footer>
+
+       </div>
+       
+   </body>
+   <script src="./index.js">
+
+   </script>
+</html>
