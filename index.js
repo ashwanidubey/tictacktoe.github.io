@@ -66,7 +66,7 @@ function checkWinner(myarg)
    }
    if(gameover==5)
    {
-     if(myarg=='X')
+     if(myarg=="<b>X</b>")
        gameover=1
      else
        gameover= 2 
