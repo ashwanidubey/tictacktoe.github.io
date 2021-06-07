@@ -81,11 +81,13 @@ function check(argument)
   {
     if(count%2==0)
       {document.getElementById("btn"+argument).innerHTML="X"
+      document.getElementById("btn"+argument).style.color="red"
       document.getElementById("player2name").style.color="green"
       document.getElementById("player1name").style.color="black"
       }
     else
      { document.getElementById("btn"+argument).innerHTML="O"
+     document.getElementById("btn"+argument).style.color="blue"
      document.getElementById("player1name").style.color="green"
      document.getElementById("player2name").style.color="black"
     }
@@ -98,11 +100,17 @@ function check(argument)
       document.getElementById("player_name_div").style.display='none'
       document.getElementById("winner_div").style.display="flex";
       if(gameover==1)
-      document.getElementById("winner_message").innerHTML=player1+" won"
+      {document.getElementById("winner_message").innerHTML=player1+" won"
+      document.getElementById("winner_message").style.color="red"
+    }
       else if(gameover==2)
-      document.getElementById("winner_message").innerHTML=player2+" won"
+      {document.getElementById("winner_message").innerHTML=player2+" won"
+      document.getElementById("winner_message").style.color="blue"
+     }
       else 
-      document.getElementById("winner_message").innerHTML="draw"
+     { document.getElementById("winner_message").innerHTML="draw"
+     document.getElementById("winner_message").style.color="green"
+    }
     }
   }
   
